@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>stumagsys</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+  <servlet>
+  	<servlet-name>loginServlet</servlet-name>
+  	<servlet-class>io.github.cho3en1.servlet.LoginServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>exitServlet</servlet-name>
+    <servlet-class>io.github.cho3en1.servlet.ExitServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>inputStuInfoServlet</servlet-name>
+    <servlet-class>io.github.cho3en1.servlet.InputStuInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>displayStuInfoServlet</servlet-name>
+    <servlet-class>io.github.cho3en1.servlet.DisplayStuInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>modifyOneStuServlet</servlet-name>
+    <servlet-class>io.github.cho3en1.servlet.ModifyOneStuServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>modifyOneStuInfoServlet</servlet-name>
+    <servlet-class>io.github.cho3en1.servlet.ModifyOneStuInfoServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>deleteStuServlet</servlet-name>
+    <servlet-class>io.github.cho3en1.servlet.DeleteStuServlet</servlet-class>
+  </servlet>
+
+
+
+
+
+
+  
+  <servlet-mapping>
+	<servlet-name>loginServlet</servlet-name>
+	<url-pattern>/user/loginServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>exitServlet</servlet-name>
+    <url-pattern>/user/exitServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>inputStuInfoServlet</servlet-name>
+    <url-pattern>/student/inputStuInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>displayStuInfoServlet</servlet-name>
+    <url-pattern>/student/displayStuInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>modifyOneStuServlet</servlet-name>
+    <url-pattern>/student/modifyOneStuServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>modifyOneStuInfoServlet</servlet-name>
+    <url-pattern>/student/modifyOneStuInfoServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>deleteStuServlet</servlet-name>
+    <url-pattern>/student/deleteStuServlet</url-pattern>
+  </servlet-mapping>
+</web-app>
